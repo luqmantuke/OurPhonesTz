@@ -1,122 +1,17 @@
+{% extends 'base.html' %}
 {% load static %}
-<html lang="en">
-  <head>
-    <title>OurPhonesTz -Home Of Genuine Phones</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+{% block body %}
 
-    <link rel="stylesheet" href="{% static 'css/open-iconic-bootstrap.min.css' %}">
-    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
-    
-    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
-    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
-    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
-
-    <link rel="stylesheet" href="{% static 'css/aos.css' %}">
-
-    <link rel="stylesheet" href="{% static 'css/ionicons.min.css' %}">
-
-    <link rel="stylesheet" href="{% static 'css/bootstrap-datepicker.css' %}">
-    <link rel="stylesheet" href="{% static 'css/jquery.timepicker.css' %}">
-
-    
-    <link rel="stylesheet" href="{% static 'css/flaticon.css' %}">
-    <link rel="stylesheet" href="{% static 'css/icomoon.css' %}">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-  </head>
-  <body class="goto-here">
-		<div class="py-1 bg-black">
-    	<div class="container">
-    		<div class="row no-gutters d-flex align-items-start align-items-center px-md-0">
-	    		<div class="col-lg-12 d-block">
-		    		<div class="row d-flex">
-		    			<div class="col-md pr-4 d-flex topper align-items-center">
-					    	<div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
-						    <span class="text">+255 624 018 818</span>
-					    </div>
-					    <div class="col-md pr-4 d-flex topper align-items-center">
-					    	<div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
-						    <span class="text">adhanahmed4@gmail.com</span>
-					    </div>
-					    <div class="col-md-5 pr-4 d-flex topper align-items-center text-lg-right">
-						    <span class="text">3-5 Business days delivery &amp; Free Returns</span>
-					    </div>
-				    </div>
-			    </div>
-		    </div>
-		  </div>
+      <div class="hero-wrap hero-bread" style="background-image: url({% static 'images/logo.jpeg' %});">
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center">
+          <div class="col-md-9 ftco-animate text-center">
+            <h1 class="mb-0 bread">OurPhonesTz</h1>
+          </div>
+        </div>
+      </div>
     </div>
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="index.html">OurPhonesTz</a>
-	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
 
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-	         	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
-    <!-- END nav -->
-  {% if messages %}<br>
-<div style="font-size:13px;" class="col-md-12 text-center mt-0 pt-0">
-  {% for message in messages %}
-    <div class="alert alert-{{ message.tags }}">{{ message | safe }}</div>
-  {% endfor %}
-</div>
-{% endif %}
-
-    <section id="home-section" class="hero">
-		  <div class="home-slider owl-carousel">
-	      <div class="slider-item js-fullheight">
-	      	<div class="overlay"></div>
-	        <div class="container-fluid p-0">
-	          <div class="row d-md-flex no-gutters slider-text align-items-center justify-content-end" data-scrollax-parent="true">
-	          	<img class="one-third order-md-last img-fluid" src="{% static 'images/bg_1.png' %}" alt="">
-		          <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<div class="text">
-		          		<span class="subheading">#New Arrival</span>
-		          		<div class="horizontal">
-				            <h1 class="mb-4 mt-3">Phone Collection 2021</h1>
-				            <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country.</p>
-				            
-				            <p><a href="#" class="btn-custom">Discover Now</a></p>
-				          </div>
-		            </div>
-		          </div>
-	        	</div>
-	        </div>
-	      </div>
-
-	      <div class="slider-item js-fullheight">
-	      	<div class="overlay"></div>
-	        <div class="container-fluid p-0">
-
-	          <div class="row d-flex no-gutters slider-text align-items-center justify-content-end" data-scrollax-parent="true">
-	          	<img class="one-third order-md-last img-fluid" src="{% static 'images/bg_2.png' %}" alt="">
-		          <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<div class="text">
-		          		<span class="subheading">#New Arrival</span>
-		          		<div class="horizontal">
-				            <h1 class="mb-4 mt-3">New Phones Winter Collection</h1>
-				            <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country.</p>
-				            
-				            <p><a href="#" class="btn-custom">Discover Now</a></p>
-				          </div>
-		            </div>
-		          </div>
-	        	</div>
-	        </div>
-	      </div>
-	    </div>
-    </section>
 
     <section class="ftco-section ftco-no-pt ftco-no-pb">
 			<div class="container">
@@ -128,7 +23,7 @@
               </div>
               <div class="media-body">
                 <h3 class="heading">Free Shipping</h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                <p>We provide free delivery to all Dar-es-Salaam clients. Also, we deliver to all regions inside and outside Tanzania.</p>
               </div>
             </div>      
           </div>
@@ -138,8 +33,8 @@
             		<span class="flaticon-customer-service"></span>
               </div>
               <div class="media-body">
-                <h3 class="heading">Support Customer</h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                <h3 class="heading">Customer Support</h3>
+                <p>We provide 24/7 customer support in all aspects such as enquiries and order tracking while delivering. </p>
               </div>
             </div>    
           </div>
@@ -150,7 +45,7 @@
               </div>
               <div class="media-body">
                 <h3 class="heading">Secure Payments</h3>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                <p>We value our customer's privacy and assure their payments and personal informations are so well secured.</p>
               </div>
             </div>      
           </div>
@@ -162,8 +57,9 @@
     	<div class="container">
 				<div class="row justify-content-center mb-3 pb-3">
           <div class="col-md-12 heading-section text-center ftco-animate">
-            <h2 class="mb-4">New Phones Arrival</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+            <h2 class="mb-4">New Phones Available</h2>
+            <p>BRAND NEW IPHONES FROM UK,US,UAE
+EXCHANGE ALLOWED ♻️</p>
           </div>
         </div>   		
     	</div>
@@ -181,7 +77,7 @@
 	    						<p class="price"><span>{{new.price}} Tsh}</span></p>
 	    					</div>
 	    					<p class="bottom-area d-flex px-3">
-    							<a href="#" class="buy-now text-center py-2">Buy now<span><i class="ion-ios-cart ml-1"></i></span></a>
+    							<a href="{% url 'contact' %}" class="buy-now text-center py-2">Buy now<span><i class="ion-ios-cart ml-1"></i></span></a>
     						</p>
     					</div>
     				</div>
@@ -200,7 +96,8 @@
 				<div class="row justify-content-center mb-3 pb-3">
           <div class="col-md-12 heading-section text-center ftco-animate">
             <h2 class="mb-4">IPHONE'S Available</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+            <p>BRAND NEW IPHONES, USED IPHONES FROM UK,US,UAE
+EXCHANGE ALLOWED ♻️</p>
           </div>
         </div>
     	</div>
@@ -218,7 +115,7 @@
 	    						<p class="price"><span>{{ip.price}} Tsh}</span></p>
 	    					</div>
 	    					<p class="bottom-area d-flex px-3">
-    							<a href="#" class="buy-now text-center py-2">Buy now<span><i class="ion-ios-cart ml-1"></i></span></a>
+    							<a href="{% url 'contact' %}" class="buy-now text-center py-2">Buy now<span><i class="ion-ios-cart ml-1"></i></span></a>
     						</p>
     					</div>
     				</div>
@@ -237,7 +134,9 @@
 				<div class="row justify-content-center mb-3 pb-3">
           <div class="col-md-12 heading-section text-center ftco-animate">
             <h2 class="mb-4">SAMSUNG'S Available</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+            <p>BRAND NEW SAMSUNG,
+USED IPHONES FROM UK,US,UAE
+EXCHANGE ALLOWED ♻️</p>
           </div>
         </div>
     	</div>
@@ -255,7 +154,7 @@
 	    						<p class="price"><span>{{sa.price}} Tsh}</span></p>
 	    					</div>
 	    					<p class="bottom-area d-flex px-3">
-    							<a href="#" class="buy-now text-center py-2">Buy now<span><i class="ion-ios-cart ml-1"></i></span></a>
+    							<a href="{% url 'contact' %}" class="buy-now text-center py-2">Buy now<span><i class="ion-ios-cart ml-1"></i></span></a>
     						</p>
     					</div>
     				</div>
@@ -279,7 +178,7 @@
         				</div>
         				<div class="text">
 	        				<h3>Free Shipping</h3>
-	        				<p class="mb-0">Separated they live in. A small river named Duden flows</p>
+	        				<p class="mb-0">We provide free delivery to all Dar-es-Salaam clients. Also, we deliver to all regions inside and outside Tanzania.</p>
         				</div>
         			</div>
         			<div class="services-2 p-4 d-flex ftco-animate">
@@ -288,16 +187,7 @@
         				</div>
         				<div class="text">
 	        				<h3>Valuable Gifts</h3>
-	        				<p class="mb-0">Separated they live in. A small river named Duden flows</p>
-	        			</div>
-        			</div>
-        			<div class="services-2 p-4 d-flex ftco-animate">
-        				<div class="icon">
-        					<span class="flaticon-payment-security"></span>
-        				</div>
-        				<div class="text">
-	        				<h3>All Day Support</h3>
-	        				<p class="mb-0">Separated they live in. A small river named Duden flows</p>
+	        				<p class="mb-0">We provide valuable gifts to our customers during delivery. Shop With Us</p>
 	        			</div>
         			</div>
         			<div class="services-2 p-4 d-flex ftco-animate">
@@ -306,7 +196,16 @@
         				</div>
         				<div class="text">
 	        				<h3>All Day Support</h3>
-	        				<p class="mb-0">Separated they live in. A small river named Duden flows</p>
+	        				<p class="mb-0">We provide 24/7 customer support in all aspects such as enquiries and order tracking while delivering.</p>
+	        			</div>
+        			</div>
+        			<div class="services-2 p-4 d-flex ftco-animate">
+        				<div class="icon">
+        					<span class="flaticon-payment-security"></span>
+        				</div>
+        				<div class="text">
+	        				<h3>Secure Payments</h3>
+	        				<p class="mb-0">We value our customer's privacy and assure their payments and personal informations are so well secured.</p>
 	        			</div>
         			</div>
         		</div>
@@ -314,76 +213,76 @@
           <div class="col-lg-7">
           	<div class="heading-section ftco-animate mb-5">
 	            <h2 class="mb-4">Our satisfied customer says</h2>
-	            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
+	            <p>We've served 100's of clients and these are some of what my clients have to say.</p>
 	          </div>
             <div class="carousel-testimony owl-carousel">
               <div class="item">
                 <div class="testimony-wrap">
-                  <div class="user-img mb-4" style="background-image: url({% static 'images/person_1.jpg' %})">
+                  <div class="user-img mb-4" style="background-image: url({% static 'images/person_1.jpeg' %})">
                     <span class="quote d-flex align-items-center justify-content-center">
                       <i class="icon-quote-left"></i>
                     </span>
                   </div>
                   <div class="text">
-                    <p class="mb-4 pl-4 line">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Garreth Smith</p>
-                    <span class="position">Marketing Manager</span>
+                    <p class="mb-4 pl-4 line">It was my pleasure doing business with OurPhonesTz and I have never regreted working with them.</p>
+                    <p class="name">Subrina</p>
+                    <span class="position">Business Woman</span>
                   </div>
                 </div>
               </div>
               <div class="item">
                 <div class="testimony-wrap">
-                  <div class="user-img mb-4" style="background-image: url({% static 'images/person_2.jpg' %})">
+                  <div class="user-img mb-4" style="background-image: url({% static 'images/person_2.jpeg' %})">
                     <span class="quote d-flex align-items-center justify-content-center">
                       <i class="icon-quote-left"></i>
                     </span>
                   </div>
                   <div class="text">
-                    <p class="mb-4 pl-4 line">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Garreth Smith</p>
-                    <span class="position">Interface Designer</span>
+                    <p class="mb-4 pl-4 line">I've been doing business with OurPhonesTz since when I startd using Iphones and I've never ran out of issue.</p>
+                    <p class="name">Roble</p>
+                    <span class="position">Business Man</span>
                   </div>
                 </div>
               </div>
               <div class="item">
                 <div class="testimony-wrap">
-                  <div class="user-img mb-4" style="background-image: url({% static 'images/person_3.jpg' %})">
+                  <div class="user-img mb-4" style="background-image: url({% static 'images/person_3.jpeg' %})">
                     <span class="quote d-flex align-items-center justify-content-center">
                       <i class="icon-quote-left"></i>
                     </span>
                   </div>
                   <div class="text">
-                    <p class="mb-4 pl-4 line">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Garreth Smith</p>
-                    <span class="position">UI Designer</span>
+                    <p class="mb-4 pl-4 line">I really like how OurPhonesTz does phone exchange it is an affordable price and the exchange is really worth it.</p>
+                    <p class="name">Farhiya</p>
+                    <span class="position">Enterpreneur</span>
                   </div>
                 </div>
               </div>
               <div class="item">
                 <div class="testimony-wrap">
-                  <div class="user-img mb-4" style="background-image: url({% static 'images/person_1.jpg' %})">
+                  <div class="user-img mb-4" style="background-image: url({% static 'images/person_4.jpeg' %})">
                     <span class="quote d-flex align-items-center justify-content-center">
                       <i class="icon-quote-left"></i>
                     </span>
                   </div>
                   <div class="text">
-                    <p class="mb-4 pl-4 line">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Garreth Smith</p>
-                    <span class="position">Web Developer</span>
+                    <p class="mb-4 pl-4 line">What I like about OurphonesTz is being able to buy used phones which are actually original.</p>
+                    <p class="name">Nasra</p>
+                    <span class="position">Student</span>
                   </div>
                 </div>
               </div>
               <div class="item">
                 <div class="testimony-wrap">
-                  <div class="user-img mb-4" style="background-image: url({% static 'images/person_1.jpg' %})">
+                  <div class="user-img mb-4" style="background-image: url({% static 'images/person_5.jpeg' %})">
                     <span class="quote d-flex align-items-center justify-content-center">
                       <i class="icon-quote-left"></i>
                     </span>
                   </div>
                   <div class="text">
-                    <p class="mb-4 pl-4 line">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <p class="name">Garreth Smith</p>
-                    <span class="position">System Analyst</span>
+                    <p class="mb-4 pl-4 line">OurphonesTz does a really good job in doing delivery. They've delivered couple of my phones online.</p>
+                    <p class="name">Ducalle</p>
+                    <span class="position">Businessman</span>
                   </div>
                 </div>
               </div>
@@ -398,155 +297,57 @@
     		<div class="row justify-content-center">
     			<div class="col-md-8 heading-section text-center mb-4 ftco-animate">
             <h2 class="mb-4">Follow Us On Instagram</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in</p>
+            <p>Keep yourself posted and check out more of our stuffs on Instagram. Click 	<a href="https://www.instagram.com/our_phones_tz/" target="_blank">HERE</a></p>
           </div>
     		</div>
     	</div>
     	<div class="container-fluid px-0">
     		<div class="row no-gutters">
 					<div class="col-md-4 col-lg-2 ftco-animate">
-						<a href="{% static 'images/gallery-1.jpg' %}" class="gallery image-popup img d-flex align-items-center" style="background-image: url({% static 'images/gallery-1.jpg' %});">
+						<a href="https://www.instagram.com/our_phones_tz/" target="_blank" class="gallery image-popup img d-flex align-items-center" style="background-image: url({% static 'images/ig1.jpeg' %});">
 							<div class="icon mb-4 d-flex align-items-center justify-content-center">
     						<span class="icon-instagram"></span>
     					</div>
 						</a>
 					</div>
 					<div class="col-md-4 col-lg-2 ftco-animate">
-						<a href="{% static 'images/gallery-1.jpg' %}" class="gallery image-popup img d-flex align-items-center" style="background-image: url({% static 'images/gallery-1.jpg' %});">
+						<a href="https://www.instagram.com/our_phones_tz/ " target="_blank" class="gallery image-popup img d-flex align-items-center" style="background-image: url({% static 'images/ig2.jpeg' %});">
 							<div class="icon mb-4 d-flex align-items-center justify-content-center">
     						<span class="icon-instagram"></span>
     					</div>
 						</a>
 					</div>
 					<div class="col-md-4 col-lg-2 ftco-animate">
-						<a href="{% static 'images/gallery-1.jpg' %}" class="gallery image-popup img d-flex align-items-center" style="background-image: url({% static 'images/gallery-1.jpg' %});">
+						<a href="https://www.instagram.com/our_phones_tz/ " target="_blank" class="gallery image-popup img d-flex align-items-center" style="background-image: url({% static 'images/ig3.jpeg' %});">
 							<div class="icon mb-4 d-flex align-items-center justify-content-center">
     						<span class="icon-instagram"></span>
     					</div>
 						</a>
 					</div>
 					<div class="col-md-4 col-lg-2 ftco-animate">
-						<a href="{% static 'images/gallery-1.jpg' %}" class="gallery image-popup img d-flex align-items-center" style="background-image: url({% static 'images/gallery-1.jpg' %});">
+						<a href="https://www.instagram.com/our_phones_tz/ " target="_blank" class="gallery image-popup img d-flex align-items-center" style="background-image: url({% static 'images/ig4.jpeg' %});">
 							<div class="icon mb-4 d-flex align-items-center justify-content-center">
     						<span class="icon-instagram"></span>
     					</div>
 						</a>
 					</div>
 					<div class="col-md-4 col-lg-2 ftco-animate">
-						<a href="{% static 'images/gallery-1.jpg' %}" class="gallery image-popup img d-flex align-items-center" style="background-image: url({% static 'images/gallery-1.jpg' %});">
+						<a href="https://www.instagram.com/our_phones_tz/ " target="_blank" class="gallery image-popup img d-flex align-items-center" style="background-image: url({% static 'images/ig5.jpeg' %});">
 							<div class="icon mb-4 d-flex align-items-center justify-content-center">
     						<span class="icon-instagram"></span>
     					</div>
 						</a>
 					</div>
+				
 					<div class="col-md-4 col-lg-2 ftco-animate">
-						<a href="{% static 'images/gallery-1.jpg' %}" class="gallery image-popup img d-flex align-items-center" style="background-image: url({% static 'images/gallery-1.jpg' %});">
+						<a href="https://www.instagram.com/our_phones_tz/ " target="_blank" class="gallery image-popup img d-flex align-items-center" style="background-image: url({% static 'images/ig6.jpeg' %});">
 							<div class="icon mb-4 d-flex align-items-center justify-content-center">
     						<span class="icon-instagram"></span>
     					</div>
 						</a>
 					</div>
+					
         </div>
     	</div>
     </section>
-
-    <footer class="ftco-footer ftco-section">
-      <div class="container">
-      	<div class="row">
-      		<div class="mouse">
-						<a href="#" class="mouse-icon">
-							<div class="mouse-wheel"><span class="ion-ios-arrow-up"></span></div>
-						</a>
-					</div>
-      	</div>
-        <div class="row mb-5">
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">OurPhonesTz</h2>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4 ml-md-5">
-              <h2 class="ftco-heading-2">Menu</h2>
-              <ul class="list-unstyled">
-                <li><a href="#" class="py-2 d-block">Admin</a></li>
-                <li><a href="#" class="py-2 d-block">About</a></li>
-                
-                <li><a href="#" class="py-2 d-block">Contact Us</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-4">
-             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Help</h2>
-              <div class="d-flex">
-	              <ul class="list-unstyled mr-l-5 pr-l-3 mr-4">
-	                <li><a href="#" class="py-2 d-block">Shipping Information</a></li>
-	                <li><a href="#" class="py-2 d-block">Returns &amp; Exchange</a></li>
-	                <li><a href="#" class="py-2 d-block">Terms &amp; Conditions</a></li>
-	                <li><a href="#" class="py-2 d-block">Privacy Policy</a></li>
-	              </ul>
-	              <ul class="list-unstyled">
-	                <li><a href="#" class="py-2 d-block">FAQs</a></li>
-	                <li><a href="#" class="py-2 d-block">Contact</a></li>
-	              </ul>
-	            </div>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-            	<h2 class="ftco-heading-2">Have a Questions?</h2>
-            	<div class="block-23 mb-3">
-	              <ul>
-	                <li><span class="icon icon-map-marker"></span><span class="text">Makumbusho bus stand Near Tigo Hq, Dar es Salaam Tanzania
-</span></li>
-	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+255 624 018 818</span></a></li>
-	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">adhanahmed4@gmail.com</span></a></li>
-	              </ul>
-	            </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12 text-center">
-
-            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This site is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://www.instagram.com/smartcodes_tz/" target="_blank">Luqman Tuke(smartcodes-tz)</a>
-						  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-						</p>
-          </div>
-        </div>
-      </div>
-    </footer>
-    
-  
-
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
-
-  <script src="{% static 'js/jquery.min.js' %}"></script>
-  <script src="{% static 'js/jquery-migrate-3.0.1.min.js' %}"></script>
-  <script src="{% static 'js/popper.min.js' %}"></script>
-  <script src="{% static 'js/bootstrap.min.js' %}"></script>
-  <script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
-  <script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
-  <script src="{% static 'js/jquery.stellar.min.js' %}"></script>
-  <script src="{% static 'js/owl.carousel.min.js' %}"></script>
-  <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
-  <script src="{% static 'js/aos.js' %}"></script>
-  <script src="{% static 'js/jquery.animateNumber.min.js' %}"></script>
-  <script src="{% static 'js/bootstrap-datepicker.js' %}"></script>
-  <script src="{% static 'js/scrollax.min.js' %}"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="{% static 'js/google-map.js' %}"></script>
-  <script src="{% static 'js/main.js' %}"></script>
-    
-  </body>
-</html>
+{% endblock body %}
