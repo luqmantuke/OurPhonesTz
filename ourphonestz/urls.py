@@ -26,4 +26,3 @@ path('', include('contact.urls')),
 ]
 handler404 = 'opt.views.handler404'
 handler500 = 'opt.views.handler500'
-
